@@ -1,0 +1,65 @@
+PASOS PARA CREAR UNA PAGINA WEB CON NEXT.JS
+
+WARNINGS !!!
+No usar. ‘next-auth/client’ usar ‘next-auth/react’
+El singIn Era con la client_id y secret_client_id que de da google Cloud despues de pedir la credencial en la página de google cloud!!!! dios!!!
+Los components en Pages empiezan con minuscule
+
+  - En la terminal de mac hacer ------> git clone https://github.com/sonnysangha/Amazon-starter-template-nextjs.git
+Open project on vsc
+npm run dev (so that the project install Next)
+npm i 
+npm i react 
+npm i react-dom
+Go to tailwind.config.js and hit command + save
+Create src > components > Headers.js
+On the higher level create next.config.js (add all domains without https and only upto .com)
+Add the fakestoreapi.com
+Close vsc and reopen (you change the configuration file, need to reopen)
+npm i @heroicons/react 
+npm I react-responsive-carousel
+npm i react-toastify
+npm i sweetalert2
+npm i tailwindcss
+npm i @tailwindcss/line-clamp
+npm i @reduxjs/toolkit
+npm i @headlessui/react
+npm i react-aria
+npm i framer-motion
+npm I mongoose
+npm i stripe
+npm i @stripe/stripe-js
+
+
+Codigo Esecial para integrar MP en NextJs (bien crudo)
+https://github.com/juanpablosolana/MercadoPago-CheckoutPro/blob/main/pages/index.js (La Data)
+
+@$!#@$!% TEMA URIS @!$%@$%!$%! ----- ESTANDO EN LOCAL HOST NO TE VA A ACEPTAR LOS PAGOS.
+
+- cambiar las uris a las que te va a redirigir  (en localhost no aprueba la transaction por que no es una url segura)
+- no importa que diga que la api se resuelve sin mandar respuesta
+- en payer tenes que crear un usuario de testeo en mercado pago developers
+
+
+
+1. Global.css (copy from global.css)
+2. Transform env.local.examples to  —> env.local
+3. Add firebase file with configuration + import firebase from ‘firebase
+
+
+Steps with stripe 
+
+Install Stripe CLI 	(Already done, not need to by done again) ——> Located at /usr/local/bin
+
+Mac Terminal 
+stripe login 
+- Then hit enter to login
+
+
+Cosas que faltan
+
+1 si la persona quiere retirar por el local, no deberia llenar el from para el envio, sino que simplemente pagar
+
+2 buscar la manera de que cuando la persona pague se efectue el post del formulario del envio
+
+3 formularios distintos segun las distintas ubicaciones, es decir, si la persona elige salta para el envio que el input del formulario solo deje elegir salta

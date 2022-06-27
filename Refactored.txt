@@ -1,0 +1,67 @@
+----------------------------------------------------------------
+
+
+
+----------------------------------------------------------------
+COMPONENETE PRODUCTO ANTES DE CAROUSEL
+
+import React from "react";
+import Image from "next/image";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { idChoosen } from "../slices/basketSlice";
+import { useRouter } from "next/router";
+//import Currency from "react-currency-formatter"; ----> import npm i react-currency-formatter
+
+function Products({ id, title, price, description, image }) {
+  const dispatch = useDispatch();
+  const [hasPrime] = useState(Math.random() < 0.5);
+  const router = useRouter();
+
+  return (
+    <div
+      onClick={() => {
+        dispatch(idChoosen({ id, title, price, description, image }));
+        router.push(`/${id}`);
+      }}
+      className="relative  flex flex-col   bg-white z-30 m-1"
+    >
+      <Image src={image} height={350} width={300} objectFit="contain" />
+
+      <p className="my-3 text-sm text-center">{title}</p>
+
+      <p className="pb-2 text-center text-xs">{"$" + price}</p>
+      {/*    <div>
+        {hasPrime && (
+          <div className="flex items-center space-x-2 -mt-5 pb-1 pt-4">
+            <p>ON-Stock</p>
+          </div>
+        )}
+      </div> */}
+      {/*
+      <button
+        className="mt-auto button flex flex-row"
+        onClick={() => {
+          dispatch(addToBasket({ id, title, price, description, image }));
+          Swal.fire({
+            position: "center",
+            title: "Agregado al carrito",
+            icon: "info",
+            showConfirmButton: false,
+            timer: 1000,
+          });
+        }}
+      >
+     
+        <ShoppingBagIcon className="w-6 h-6" />
+        COMPRAR
+      </button>
+       */}
+    </div>
+  );
+}
+
+//<Currency quantity={price} currency="GBP" />
+//  <p className="text-xs my-2 line-clamp-2">{description}</p>
+
+export default Products;
