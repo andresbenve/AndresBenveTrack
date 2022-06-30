@@ -6,7 +6,7 @@ function VideoVestidos() {
       <div>
         <div className="videoWrapper ">
           <iframe
-            src="https://player.vimeo.com/video/50855881?autoplay=1&loop=1&autopause=0&muted=1"
+            src="https://player.vimeo.com/video/724974021?autoplay=1&loop=1&autopause=0&muted=1"
             // hay que borrar lo que dice h=numeros? y agregale todo lo que dice despues de autoplay.
             // linkn con la data https://www.youtube.com/watch?v=SGwHsszcASo
             frameBorder="0"

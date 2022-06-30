@@ -1,9 +1,10 @@
 import { React } from "react";
 import { useRouter } from "next/router";
-import WhatsappMobile from "./WhatsappMobile";
-import Instagram from "../shared/Instagram";
-import Tiktok from "../shared/Tiktok";
-import Calendar from "../shared/Calendar";
+import WhatsappMobile from "./../WhatsappMobile";
+import Instagram from "../../shared/Instagram";
+import Tiktok from "../../shared/Tiktok";
+import Linkedin from "../../shared/Linkedin";
+import Calendar from "../../shared/Calendar";
 
 function FooterChat() {
   const router = useRouter();
@@ -45,10 +46,10 @@ function FooterChat() {
         }}
         className="flex items-center justify-center w-full  ml-16"
       />
-      <div className="flex items-center justify-end w-full font-bold buttonAgendarCita col-span-4 flex  items-center justify-center w-full  text-white">
-        TIKTOK
+      <div className="flex items-center justify-end w-full font-bold buttonLinkedin col-span-4 flex  items-center justify-center w-full  text-white">
+        LINKEDIN
       </div>
-      <Tiktok className="flex items-center justify-center w-full mt-4 ml-16" />
+      <Linkedin className="flex items-center justify-center w-full mt-4 ml-16" />
       {/* NOTA: Por si se quiere agregar  Google Maps acá */}
       {/* <div className="flex items-center justify-end w-full font-bold buttonGoogleMaps col-span-4 flex  items-center justify-center w-full  text-white">
         UBICACION EN GOOGLE MAPS

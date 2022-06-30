@@ -4,7 +4,7 @@ import { signIn } from "next-auth/react";
 import { useSession, signOut } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
-import { selectItems } from "../../slices/basketSlice";
+import { selectItems } from "../../../slices/basketSlice";
 
 function Header() {
   const { data: session, status } = useSession();
@@ -45,8 +45,8 @@ function Header() {
               router.push("https://calendly.com/andresbenve/pruebas")
             }
           >
-            <p className="text-right">Agendar</p>
-            <p className="font-extrabold md:text-sm text-right">Cita</p>
+            <p className="text-right">Schedule</p>
+            <p className="font-extrabold md:text-sm text-right">Meet</p>
           </div>
         </div>
       </div>

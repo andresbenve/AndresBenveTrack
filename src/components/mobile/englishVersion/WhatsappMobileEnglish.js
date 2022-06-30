@@ -15,10 +15,7 @@ function MyLink(props) {
 export default function Whatsapp() {
   const router = useRouter();
   return (
-    <div
-      className=" bottom-4 right-4 z-50"
-      onClick={() => router.push("https://wa.me/5491154844670")}
-    >
+    <div onClick={() => router.push("https://wa.me/5491154844670")}>
       <Menu as="div" className="relative inline-block text-left order-last">
         <div>
           <Menu.Button className=" inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white rounded-md bg-opacity-90 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
