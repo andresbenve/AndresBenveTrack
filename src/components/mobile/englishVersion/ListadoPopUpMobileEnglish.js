@@ -2,6 +2,9 @@ import { React, useState } from "react";
 import { ChevronRightIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import ReactIcon from '../../shared/ReactIcon'
+import Next from '../../shared/Next'
+import HtmlIcon from '../../shared/HtmlIcon'
 
 function ListadoPopUp() {
   const router = useRouter();
@@ -16,32 +19,33 @@ function ListadoPopUp() {
         <div className="col-span-2 text-center m-4 font-bold">PROJECTS</div>
         <div
           onClick={() => setisDressUp(!isDressUp)}
-          className="flex items-center justify-end w-full font-bold "
+          className="flex col-span-2 items-center justify-center w-full font-bold   "
         >
-          REACT
+          React <ReactIcon/>
+          
         </div>
-        <ChevronRightIcon className="flex items-center justify-center w-full  ml-16 h-6 w-5" />
+        {/* <ChevronRightIcon className="flex items-center justify-center w-full  ml-16 h-6 w-5" /> */}
         <div
           onClick={() => setisMerchandising(!isMerchandising)}
-          className="flex items-center justify-end w-full mt- 4 font-bold "
+          className="flex col-span-2 items-center justify-center w-full mt- 4   font-bold "
         >
-          NEXTJS
+          Next <Next/>
         </div>
-        <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" />
+        {/* <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" /> */}
         <div
           onClick={() => setisArt(!isArt)}
-          className="flex items-center justify-end w-full font-bold"
+          className="flex col-span-2 items-center justify-center w-full font-bold  "
         >
-          HTML
+          HTML <HtmlIcon/>
         </div>
-        <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" />
+        {/* <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" /> */}
         <div
           onClick={() => setisBags(!isBags)}
-          className="flex items-center justify-end w-full font-bold "
+          className="flex col-span-2 items-center justify-center w-full font-bold   text-sm"
         >
-          REACT NATIVE
+          React Native<ReactIcon/>
         </div>
-        <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" />
+        {/* <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" /> */}
         <div className="flex items-center justify-center w-full"></div>
 
       </div>

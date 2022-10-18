@@ -17,7 +17,7 @@ export default function Github() {
   return (
     <div
       className=" bottom-4 right-4 z-50"
-      onClick={() => router.push("https://wa.me/5491154844670")}
+      onClick={() => router.push("https://github.com/andresbenve")}
     >
       <Menu as="div" className="relative inline-block text-left order-last">
         <div>

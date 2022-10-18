@@ -3,29 +3,31 @@ import router from "next/router";
 import GoogleMaps from "../shared/GoogleMaps";
 import Whatsapp from "../shared/Whatsapp";
 import Image from "next/image";
-
+import { ChevronUpIcon } from "@heroicons/react/outline";
+import { ChevronLeftIcon } from "@heroicons/react/outline";
 function FooterPolicies() {
   return (
     // <div className="bg-gray-100 ">
     <div>
       {/* <div className="col-span-5">.</div>
       <div className="col-span-5">.</div> */}
-      <div className="flex items-center justify-center  grid grid-cols-5 gap-0 flex flex-col flex-grow ">
+      <div class="flex items-center justify-center  grid grid-cols-5 gap-0 flex flex-col flex-grow bg-gray-700 mb-20">
         <div className="flex items-center justify-center  font-bold buttonGoogleMaps col-span-5  text-white m-4 mb-0 mt-6">
-          BASES Y CONDICIONES
+          TERMINOS Y CONDICINES
         </div>
         <div className="flex items-center justify-center  font-bold buttonGoogleMaps col-span-5 text-white m-4 mb-0   ">
-          ENVIOS
+          TRABAJOS ACTUALES
         </div>
         <div className="flex items-center justify-center  font-bold buttonGoogleMaps col-span-5 text-white m-4 mb-0">
-          SOBRE BENVE
+          MIS INTERESES
         </div>
         <div
           onClick={() => router.push("https://goo.gl/maps/G7UGC6o6U33C6Q8S9")}
           className="flex items-center justify-center  font-bold buttonGoogleMaps col-span-5 text-white m-4 mb-0"
         >
-          ABRIR SHOWROOM EN GOOGLE MAPS
+          DONDE VIVO ❤️ (GOOGLE MAPS)
         </div>
+
         {/* <GoogleMaps
           onClick={() => router.push("https://goo.gl/maps/G7UGC6o6U33C6Q8S9")}
           className="flex items-center justify-center w-full  ml-16"
@@ -51,20 +53,21 @@ function FooterPolicies() {
             objectfit="contain"
           />
         </div> */}
-        <div className="col-span-5 text-black  mt-4 text-center">
-          © Benve Ba, All Rights Reserve
+        <div className="col-span-5  text-xs text-white mt-4  text-center">
+          Copyright © 2022 Andres Benvenuto, Todos Los Derechos Reservados
+          <p className="text-white">Designer & Developer</p>
         </div>
-
-        <div className="col-span-5 text-white">.</div>
-
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
+        <div className="flex items-center justify-center col-span-5  text-white mt-4">
+          
+          <ChevronUpIcon
+            className="h-10 w-10"
+            onClick={() => {
+              window.scroll(0, 0);
+            }}
+          />
+          
+        </div>
+        <div className="col-span-5 mb-10 text-center text-white">volver arriba</div>
       </div>
     </div>
   );

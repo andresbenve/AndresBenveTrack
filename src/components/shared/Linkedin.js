@@ -15,7 +15,7 @@ function MyLink(props) {
 export default function Linkedin() {
   const router = useRouter();
   return (
-    <div onClick={() => router.push("https://wa.me/5491154844670")}>
+    <div onClick={() => router.push("https://www.linkedin.com/in/andr%C3%A9s-benvenuto-a2b38a15a/")}>
       <Menu as="div" className="relative inline-block text-left order-last">
         <div>
           <Menu.Button className=" inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white rounded-md bg-opacity-90 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">

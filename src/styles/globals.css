@@ -408,7 +408,12 @@ h1.fadeIn span:nth-of-type(3){
   }
 }
 
+
 .crop{
-  margin-top: -130px;
-  margin-bottom: -170px;
+  margin-top: -150px;
+  margin-bottom: -150px;
+}
+
+.cortar2{
+  margin-top: -110px;
 }

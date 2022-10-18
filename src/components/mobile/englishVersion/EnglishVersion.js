@@ -7,7 +7,7 @@ import VideoVestidos from "../../shared/VideoVestidos";
 import NoSleepEnglish from "./NoSleepMobileEnglish";
 import FooterInfoEnglish from "./FooterInfoMobileEnglish";
 import FooterEnglish from "./FooterMobileEnglish";
-import Studio from "../../shared/Studio";
+import Studio from "../../shared/StudioEng";
 import CenterModeEnglish from "./CenterModeMobileEnglish";
 import FooterPoliciesEnglish from "./FooterPoliciesEnglish";
 import Image from "next/image";
@@ -43,7 +43,7 @@ function EnglishVersion({ products }) {
         <ProductFeed2English products={products} />
       </main>
       <div>
-        <CenterModeEnglish />
+        <CenterModeEnglish/>
       </div>
       {/* <div>
   <WhatsappEnglish />

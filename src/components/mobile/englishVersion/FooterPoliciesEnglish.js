@@ -11,7 +11,7 @@ function FooterPolicies() {
     <div>
       {/* <div className="col-span-5">.</div>
       <div className="col-span-5">.</div> */}
-      <div class="flex items-center justify-center  grid grid-cols-5 gap-0 flex flex-col flex-grow bg-gray-700">
+      <div class="flex items-center justify-center  grid grid-cols-5 gap-0 flex flex-col flex-grow bg-gray-700 mb-20">
         <div className="flex items-center justify-center  font-bold buttonGoogleMaps col-span-5  text-white m-4 mb-0 mt-6">
           TERMS & CONDITIONS
         </div>
@@ -57,24 +57,17 @@ function FooterPolicies() {
           Copyright © 2022 Andres Benvenuto, All Rights Reserve
           <p className="text-white">Designer & Developer</p>
         </div>
-        <div className="flex items-center justify-center col-span-5  text-white mt-4 mb-2">
+        <div className="flex items-center justify-center col-span-5  text-white mt-4">
+          
           <ChevronUpIcon
             className="h-10 w-10"
             onClick={() => {
               window.scroll(0, 0);
             }}
           />
+          
         </div>
-        <div className="col-span-5 text-white">.</div>
-
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
-        <div className="text-white">f</div>
+        <div className="col-span-5 mb-10 text-center text-white">back to top</div>
       </div>
     </div>
   );

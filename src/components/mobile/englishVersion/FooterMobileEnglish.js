@@ -177,10 +177,7 @@ function Footer({ products }) {
       {!isOpen5 ? (
         <Github
           onClick={() => {
-            setIsOpen5(!isOpen5);
-            setIsOpen3(false);
-            setIsOpen4(false);
-            setIsOpen(false);
+            router.push("https://github.com/andresbenve")
           }}
           objectfit="contain"
           className="h-12 pl-4 cursor-pointer"

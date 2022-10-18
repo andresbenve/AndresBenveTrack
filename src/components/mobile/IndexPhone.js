@@ -50,7 +50,7 @@ export default function IndexPhone({ products }) {
               setIdioma(true);
             }}
           >
-            SPA
+            ESP
           </label>
         </div>
       </div>
@@ -78,12 +78,12 @@ export default function IndexPhone({ products }) {
           <main className="max-w-screen-2xl mx-auto">
             {/* {banner} */}
             {/* {productFeed} */}
-            <ProductFeed products={products} />
+            {/* <ProductFeed products={products} /> */}
           </main>
           <main className="max-w-screen-2xl mx-auto">
             {/* {banner} */}
             {/* {productFeed} */}
-            <ProductFeed2 products={products} />
+            {/* <ProductFeed2 products={products} /> */}
           </main>
           <div>
             <CenterMode />

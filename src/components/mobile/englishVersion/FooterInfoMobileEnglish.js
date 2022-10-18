@@ -22,11 +22,11 @@ function FooterInfo() {
         />
       </div>
       <div className="ml-8 mr-8">
-        <div className="w-full border-t border-pink-500"></div>
+        <div className="w-full border-t border-black "></div>
       </div>
       <div className="flex  items-center justify-center w-full">
-        <button className=" h-10 w-24  mt-3   text-white rounded-lg bg-pink-500 ">
-          Suscribirme
+        <button className=" h-10 w-24  mt-3   text-white rounded-lg bg-black ">
+          Contact
         </button>
       </div>
       {/* nota: agregar popup de que la persona se suscribio a benve */}
