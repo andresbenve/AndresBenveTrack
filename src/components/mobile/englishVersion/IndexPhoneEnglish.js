@@ -37,7 +37,7 @@ export default function IndexPhone({ products }) {
         </Head>
         {/* ---- TO BEGIN, delete this section and GET CODING!!! ---- */}
         <Header />
-        <VideoVestidos />
+        {/* <VideoVestidos /> */}
         {/* ---- ---- */}
         {/* <NoSleep /> */}
 

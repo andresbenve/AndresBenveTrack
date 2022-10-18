@@ -31,8 +31,9 @@ export default function IndexPhone({ products }) {
       {/* <div>
         <ToggleButton />
       </div> */}
+
       <div
-        className="fixed toggleBox z-50"
+        className=" fixed toggleBox z-50 "
         onClick={() => {
           setIdioma(!idioma);
         }}
@@ -71,7 +72,7 @@ export default function IndexPhone({ products }) {
 
           <Header />
           {/* ---- ---- */}
-          <VideoVestidos />
+          {/* <VideoVestidos /> */}
           {/* <NoSleep /> */}
 
           <main className="max-w-screen-2xl mx-auto">

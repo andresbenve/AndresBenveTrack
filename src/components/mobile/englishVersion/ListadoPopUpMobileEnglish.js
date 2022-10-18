@@ -18,70 +18,32 @@ function ListadoPopUp() {
           onClick={() => setisDressUp(!isDressUp)}
           className="flex items-center justify-end w-full font-bold "
         >
-          DRESS UP
+          REACT
         </div>
         <ChevronRightIcon className="flex items-center justify-center w-full  ml-16 h-6 w-5" />
         <div
           onClick={() => setisMerchandising(!isMerchandising)}
           className="flex items-center justify-end w-full mt- 4 font-bold "
         >
-          EVERY DAY
+          NEXTJS
         </div>
         <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" />
         <div
           onClick={() => setisArt(!isArt)}
           className="flex items-center justify-end w-full font-bold"
         >
-          ART
+          HTML
         </div>
         <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" />
         <div
           onClick={() => setisBags(!isBags)}
           className="flex items-center justify-end w-full font-bold "
         >
-          BAGS
+          REACT NATIVE
         </div>
         <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" />
         <div className="flex items-center justify-center w-full"></div>
 
-        <div className="flex col-span-2 items-center justify-center">
-          <div className="flex col-span-2 items-center justify-center">
-            <Image
-              className=""
-              src="https://raw.githubusercontent.com/andresbenve/BancoDeImagenes/master/BenveLetraSeVe.png"
-              width={100}
-              height={100}
-              objectfit="contain"
-            />
-          </div>
-          <div>
-            <Image
-              className=""
-              src="https://raw.githubusercontent.com/andresbenve/BancoDeImagenes/master/BenveLetraSeVe.png"
-              width={100}
-              height={100}
-              objectfit="contain"
-            />
-          </div>
-          <div>
-            <Image
-              className=""
-              src="https://raw.githubusercontent.com/andresbenve/BancoDeImagenes/master/BenveLetraSeVe.png"
-              width={100}
-              height={100}
-              objectfit="contain"
-            />
-          </div>
-          <div>
-            <Image
-              className=""
-              src="https://raw.githubusercontent.com/andresbenve/BancoDeImagenes/master/BenveLetraSeVe.png"
-              width={100}
-              height={100}
-              objectfit="contain"
-            />
-          </div>
-        </div>
       </div>
     );
   } else if (isDressUp) {

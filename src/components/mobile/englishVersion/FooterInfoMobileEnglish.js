@@ -4,21 +4,21 @@ import Image from "next/image";
 
 function FooterInfo() {
   return (
-    <div className="align-center items-center justify-center mb-10">
-      <motion.div className="align-center items-center w-full mt-10">
+    <div className="align-center items-center justify-center mb-10 mt-10">
+      {/* <motion.div className="align-center items-center w-full mt-10">
         <Image
           height={800}
           width={1450}
           src="https://raw.githubusercontent.com/andresbenve/BancoDeImagenes/master/SubscribiteAnita.jpeg"
           alt=""
         />
-      </motion.div>
+      </motion.div> */}
       <div className="flex  items-center justify-center w-full">
         <div className="relative"></div>
         <input
           type="text"
           className="h-14  w-full ml-8 rounded-lg z-0 focus:shadow focus:outline-none"
-          placeholder="             Enter Email and I will contact you"
+          placeholder="Enter Email and I will contact you"
         />
       </div>
       <div className="ml-8 mr-8">

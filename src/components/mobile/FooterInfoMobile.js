@@ -18,7 +18,7 @@ function FooterInfo() {
         <input
           type="text"
           className="h-14  w-full ml-8 rounded-lg z-0 focus:shadow focus:outline-none"
-          placeholder="                             Enter Email"
+          placeholder="Enter Email"
         />
       </div>
       <div className="ml-8 mr-8">

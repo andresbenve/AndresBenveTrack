@@ -43,7 +43,7 @@ export default function IndexDesktop({ products }) {
         {/* {productFeed} */}
         <ProductFeedDesktop products={products} />
       </main>
-      <VideoVestidos />
+      {/* <VideoVestidos /> */}
       <main className="max-w-screen-2xl mx-auto">
         {/* {banner} */}
         {/* {productFeed} */}

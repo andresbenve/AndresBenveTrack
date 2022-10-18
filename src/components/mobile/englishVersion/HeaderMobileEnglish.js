@@ -35,9 +35,7 @@ function Header() {
             </div>
           </div>
         </div>
-        {/* {Search} */}
-
-        {/* {right} */}
+      
         <div className="absolute text-black flex text-xs space-x-4 mx-6 whitespace-nowrap right-0">
           <div
             className="link pr-6"

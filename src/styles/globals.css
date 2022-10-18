@@ -306,7 +306,8 @@ body::-webkit-scrollbar {
 }
 
 .toggleBox {
-  left: 40%;
+  padding-left: 37%;
+  padding-top: 2%;
 }
 
 input[type="checkbox"] {
@@ -369,3 +370,41 @@ label {
 }
 
 /*# sourceMappingURL=sass-autocompile.output.a30edd3f-1caa-4134-8ed9-b63cb5275866.css.map */
+
+
+::placeholder {
+  text-align: center;
+  padding-right: 27px;
+}
+.toggle2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.fadeIn span{
+  
+  font-size: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 0.5s ease-out forwards;
+  display:inline-block;
+  
+}
+
+h1.fadeIn span:nth-of-type(2){
+  animation-delay: 0.5s;
+}
+
+h1.fadeIn span:nth-of-type(3){
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

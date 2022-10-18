@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import HeaderEnglish from "./HeaderMobileEnglish";
 import ProductFeedEnglish from "./ProductFeedMobileEnglish";
 import ProductFeed2English from "./ProductFeed2MobileEnglish";
@@ -12,6 +13,7 @@ import FooterPoliciesEnglish from "./FooterPoliciesEnglish";
 import Image from "next/image";
 //import { handler } from "./api/tasks";
 import { useEffect, useState } from "react";
+import CapitalLetters from "./CapitalLetters";
 
 function EnglishVersion({ products }) {
   return (
@@ -25,9 +27,10 @@ function EnglishVersion({ products }) {
       </Head>
       {/* ---- TO BEGIN, delete this section and GET CODING!!! ---- */}
       <HeaderEnglish />
+      <CapitalLetters/>
       {/* ---- ---- */}
       {/* <NoSleepEnglish /> */}
-      <VideoVestidos />
+      {/* <VideoVestidos /> */}
 
       <main className="max-w-screen-2xl mx-auto">
         {/* {banner} */}

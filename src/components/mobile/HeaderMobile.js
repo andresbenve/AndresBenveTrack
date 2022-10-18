@@ -15,14 +15,14 @@ function Header() {
     <header className="sticky w-full top-0 z-40">
       <div className="flex items-center bg-white flex-grow  h-16">
         <div className="flex items-center flex-grow sm:flex-grow-0">
-          {/* <Image
+          <Image
             onClick={() => router.push("/")}
             className=""
             src="https://raw.githubusercontent.com/andresbenve/BancoDeImagenes/master/BenveLetraSeVe.png"
             width={120}
             height={120}
             objectfit="contain"
-          /> */}
+          />
           <div className="absolute text-black flex  text-xs space-x-2 mx-6 whitespace-nowrap">
             <div
               className="link pr-6"
@@ -30,8 +30,7 @@ function Header() {
                 router.push("https://calendly.com/andresbenve/pruebas")
               }
             >
-              <p>Andres</p>
-              <p className="font-extrabold md:text-sm">Benvenuto</p>
+          
             </div>
           </div>
         </div>
