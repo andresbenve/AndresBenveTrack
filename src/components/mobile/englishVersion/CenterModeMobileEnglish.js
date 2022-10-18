@@ -8,23 +8,31 @@ function CenterModeMobileEnglish() {
   return (
     <div>
     
-   
+      <div>
+    
+
+ <iframe height="100" className="w-full h-96 crop" src="https://rpp-peru.vercel.app/fullStackDeveloper.html">
+  
+</iframe>
+
+    </div>
     <button
       className=" flex flex-col justify-center w-full center items-center flex buttonPagar items-center justify-center  text-white text-sm mb-20"
     >
-      <p> DOWNLOAD CURRICULUM (PDF)</p>
+      
       <div className="App">
-      <header className="App-header" height={100}>
+      <header className="App-header" height={200}>
         <div>
           
         </div>
       </header>
-      <div className="mt-4">
-        <img src="https://res.cloudinary.com/dvev3rzaw/image/upload/v1666104059/Screen_Shot_2022-10-18_at_11.40.35_qzpsub.png" alt="screen" height={700} />
+      <div>
+        <img src="https://res.cloudinary.com/dvev3rzaw/image/upload/v1666118929/CVE_FOR_WEBSITE_nbs5eu.jpg" alt="screen" height={700} />
         
       </div>
     </div>
     </button>
+    <p> DOWNLOAD CURRICULUM (PDF)</p>
 </div>
   );
 }

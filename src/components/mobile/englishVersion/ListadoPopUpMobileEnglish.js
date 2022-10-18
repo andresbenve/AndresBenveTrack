@@ -13,7 +13,7 @@ function ListadoPopUp() {
   if (!isDressUp && !isMerchandising && !isBags && !isArt) {
     return (
       <div className="grid grid-cols-2 gap-2 flex flex-col flex-grow">
-        <div className="col-span-2 text-center m-4 font-bold">PROYECTS</div>
+        <div className="col-span-2 text-center m-4 font-bold">PROJECTS</div>
         <div
           onClick={() => setisDressUp(!isDressUp)}
           className="flex items-center justify-end w-full font-bold "

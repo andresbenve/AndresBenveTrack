@@ -27,7 +27,7 @@ function EnglishVersion({ products }) {
       </Head>
       {/* ---- TO BEGIN, delete this section and GET CODING!!! ---- */}
       <HeaderEnglish />
-      <CapitalLetters/>
+      {/* <CapitalLetters/> */}
       {/* ---- ---- */}
       {/* <NoSleepEnglish /> */}
       {/* <VideoVestidos /> */}

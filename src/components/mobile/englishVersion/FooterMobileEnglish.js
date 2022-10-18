@@ -281,7 +281,7 @@ function Footer({ products }) {
             <BlurBg />
           </motion.div>
           <motion.div
-            className="bottom-20 fixed bg-gray-100 w-full h-96 z-50 p-10 rounded-t-3xl"
+            className="bottom-16 fixed bg-gray-100 w-full h-96 z-50 p-10 rounded-t-3xl"
             drag="y"
             dragConstraints={{ top: 0, bottom: 1000 }}
             initial={{ y: "100%" }}
