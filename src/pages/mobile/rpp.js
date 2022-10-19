@@ -10,12 +10,12 @@ function Studio() {
   return (
     <div>
 
-    <div onClick={() => router.push('http://localhost:3000/mobile/benve')} className="fixed z-50 bottom-0 right-0 buttonPagar w-1/2 ">Siguiente proyecto →</div>
+    <div onClick={() => router.push('https://andres-benve-track.vercel.app/mobile/benve')} className="fixed z-50 bottom-0 right-0 buttonPagar w-1/2 ">Siguiente proyecto →</div>
     
-    {/* <div onClick={() => router.push('http://localhost:3000/mobile/hlearning')} className="fixed  z-50 bottom-0  buttonPagar menuCssProyectos ">Menu {<MenuIcon className="h-4 w-4 ml-1"/>} </div>
+    {/* <div onClick={() => router.push('https://andres-benve-track.vercel.app/mobile/hlearning')} className="fixed  z-50 bottom-0  buttonPagar menuCssProyectos ">Menu {<MenuIcon className="h-4 w-4 ml-1"/>} </div>
      */}
 
-    <div onClick={() => router.push('http://localhost:3000')} className="fixed flex items-center justify-center z-50 bottom-0 w-1/2 buttonPagar ">← volver a porfolio</div>
+    <div onClick={() => router.push('https://andres-benve-track.vercel.app')} className="fixed flex items-center justify-center z-50 bottom-0 w-1/2 buttonPagar ">← volver a porfolio</div>
     
 
     <div className="flex justify-center bg-white benveHtmlDiv">

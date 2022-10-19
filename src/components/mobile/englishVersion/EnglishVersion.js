@@ -10,7 +10,7 @@ import FooterEnglish from "./FooterMobileEnglish";
 import Studio from "../../shared/StudioEng";
 import CenterModeEnglish from "./CenterModeMobileEnglish";
 import FooterPoliciesEnglish from "./FooterPoliciesEnglish";
-import VideoScroll from "./VideoScroll";
+
 
 import Image from "next/image";
 //import { handler } from "./api/tasks";
