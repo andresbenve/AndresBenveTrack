@@ -18,7 +18,7 @@ function ListadoPopUp() {
       <div className="grid grid-cols-2 gap-2 flex flex-col flex-grow">
         <div className="col-span-2 text-center m-4 font-bold">PROJECTS</div>
         <div
-          onClick={() => setisDressUp(!isDressUp)}
+          onClick={() => router.push("http://localhost:3000/mobile/hlearning")}
           className="flex col-span-2 items-center justify-center w-full font-bold   "
         >
           React <ReactIcon/>
@@ -26,17 +26,17 @@ function ListadoPopUp() {
         </div>
         {/* <ChevronRightIcon className="flex items-center justify-center w-full  ml-16 h-6 w-5" /> */}
         <div
-          onClick={() => setisMerchandising(!isMerchandising)}
+          onClick={() => router.push("http://localhost:3000/mobile/benve")}
           className="flex col-span-2 items-center justify-center w-full mt- 4   font-bold "
         >
           Next <Next/>
         </div>
         {/* <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" /> */}
         <div
-          onClick={() => setisArt(!isArt)}
+          onClick={() => router.push("http://localhost:3000/mobile/rpp")}
           className="flex col-span-2 items-center justify-center w-full font-bold  "
         >
-          HTML <HtmlIcon/>
+          HTML <HtmlIcon/> 
         </div>
         {/* <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" /> */}
         <div

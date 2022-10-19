@@ -243,7 +243,7 @@ function Footer({ products }) {
             setIsOpen5(false);
           }}
           objectfit="contain"
-          className="h-10 mt-3 pl-4 cursor-pointer"
+          className="menuIconCss mt-2 pl-4 cursor-pointer"
           strokeWidth="1"
         />
       ) : (

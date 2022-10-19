@@ -32,7 +32,7 @@ function CenterModeMobileEnglish() {
       </div>
     </div>
     </button>
-    <p> DOWNLOAD CURRICULUM (PDF)</p>
+    
 </div>
   );
 }
