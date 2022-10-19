@@ -18,7 +18,7 @@ function ListadoPopUp() {
       <div className="grid grid-cols-2 gap-2 flex flex-col flex-grow">
         <div className="col-span-2 text-center m-4 font-bold">PROJECTS</div>
         <div
-          onClick={() => router.push("http://localhost:3000/mobile/hlearning")}
+          onClick={() => router.push("https://andres-benve-track.vercel.app/mobile/hlearning")}
           className="flex col-span-2 items-center justify-center w-full font-bold   "
         >
           React <ReactIcon/>
@@ -26,14 +26,14 @@ function ListadoPopUp() {
         </div>
         {/* <ChevronRightIcon className="flex items-center justify-center w-full  ml-16 h-6 w-5" /> */}
         <div
-          onClick={() => router.push("http://localhost:3000/mobile/benve")}
+          onClick={() => router.push("https://andres-benve-track.vercel.app/mobile/benve")}
           className="flex col-span-2 items-center justify-center w-full mt- 4   font-bold "
         >
           Next <Next/>
         </div>
         {/* <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" /> */}
         <div
-          onClick={() => router.push("http://localhost:3000/mobile/rpp")}
+          onClick={() => router.push("https://andres-benve-track.vercel.app/mobile/rpp")}
           className="flex col-span-2 items-center justify-center w-full font-bold  "
         >
           HTML <HtmlIcon/> 

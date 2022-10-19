@@ -296,7 +296,7 @@ function Footer({ products }) {
           </motion.div>
         </>
       )}
-      <div className="text-gray-100 col-span-5 h-4">.</div>
+      {/* <div className="text-gray-100 col-span-5 h-4">.</div> */}
       {/* {bottom} */}
     </footer>
   );
