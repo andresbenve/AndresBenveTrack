@@ -7,24 +7,24 @@ import { XIcon } from "@heroicons/react/outline";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
-
+import { selectItems } from "../../../slices/basketSlice";
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import ListadoPopUp from "./ListadoPopUpMobile";
-import FootMenu from "./FootCartMobile";
-import FooterSearch from "./FooterSearchMobile";
-import FooterChat from "./FooterChat";
-import BlurBg from "./BlurBgMobile";
-import Linkedin from "../shared/Linkedin";
-import Whatsapp from "../shared/Whatsapp";
-import Calendar from "../shared/Calendar";
-import Instagram from "../shared/Instagram";
-import Github from "../shared/Github";
+import ListadoPopUp from "./ListadoPopUpMobileEnglish";
+import FootMenu from "./FootCartMobileEnglish";
+import FooterSearch from "./FooterSearchMobileEnglish";
+import FooterChat from "./FooterChatEnglish";
+import BlurBg from "./BlurBgMobileEnglish";
+import Linkedin from "../../shared/LinkedinDesktop";
+import Whatsapp from "../../shared/WhatsappDesktop";
+import Instagram from "../../shared/InstagramDesktop";
+import Github from "../../shared/GithubDesktop";
 
 function Footer({ products }) {
   // const y = useSpring(1);
 
   const { data: session, status } = useSession();
   const router = useRouter();
+  const items = useSelector(selectItems);
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
@@ -34,7 +34,7 @@ function Footer({ products }) {
   return (
     // https://stackoverflow.com/questions/68590184/tailwind-css-make-footer-always-stay-at-bottom-of-page
     // por ahora lo que mas me sirvio es la respuesta de viveks (no funciona)
-    <footer className="fixed  bottom-0 z-50 w-full  bg-gray-100 grid grid-cols-5  content-evenly">
+    <footer className="fixed  bottom-0 z-50 w-full h  bg-gray-100 grid grid-cols-5  content-evenly">
       {/* {Search} */}
       <div>
         {!isOpen2 ? (
@@ -48,7 +48,7 @@ function Footer({ products }) {
               setIsOpen5(false);
             }}
             objectfit="contain"
-            className="h-12 pl-4 cursor-pointer"
+            className="h-12 pl-4  cursor-pointer"
             strokeWidth="1"
           />
         ) : (
@@ -242,8 +242,8 @@ function Footer({ products }) {
             setIsOpen5(false);
           }}
           objectfit="contain"
-          className="menuIconCss mt-2 pl-4 cursor-pointer"
-          strokeWidth="1"
+          className="menuIconCssDesktop mt-2 pl-4 cursor-pointer"
+          strokeWidth="2"
         />
       ) : (
         <>

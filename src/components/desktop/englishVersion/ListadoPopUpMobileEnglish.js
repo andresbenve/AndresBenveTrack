@@ -2,9 +2,9 @@ import { React, useState } from "react";
 import { ChevronRightIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import ReactIcon from '../shared/ReactIcon'
-import Next from '../shared/Next'
-import HtmlIcon from '../shared/HtmlIcon'
+import ReactIcon from '../../shared/ReactIcon'
+import Next from '../../shared/Next'
+import HtmlIcon from '../../shared/HtmlIcon'
 
 function ListadoPopUp() {
   const router = useRouter();
@@ -18,7 +18,7 @@ function ListadoPopUp() {
       <div className="grid grid-cols-2 gap-2 flex flex-col flex-grow">
         <div className="col-span-2 text-center m-4 font-bold">PROJECTS</div>
         <div
-          onClick={() => router.push(`${process.env.ACTUAL}/mobile/hlearning`)}
+          onClick={() => router.push(`${process.env.ACTUAL}/desktop/hlearning`)}
           className="flex col-span-2 items-center justify-center w-full font-bold   "
         >
           React <ReactIcon/>
@@ -26,14 +26,14 @@ function ListadoPopUp() {
         </div>
         {/* <ChevronRightIcon className="flex items-center justify-center w-full  ml-16 h-6 w-5" /> */}
         <div
-          onClick={() => router.push(`${process.env.ACTUAL}/mobile/benve`)}
+          onClick={() => router.push(`${process.env.ACTUAL}/desktop/benve`)}
           className="flex col-span-2 items-center justify-center w-full mt- 4   font-bold "
         >
           Next <Next/>
         </div>
         {/* <ChevronRightIcon className="flex items-center justify-center w-full mt-4 ml-16 h-6 w-5" /> */}
         <div
-          onClick={() => router.push(`${process.env.ACTUAL}/mobile/rpp`)}
+          onClick={() => router.push(`${process.env.ACTUAL}/desktop/rpp`)}
           className="flex col-span-2 items-center justify-center w-full font-bold  "
         >
           HTML <HtmlIcon/> 

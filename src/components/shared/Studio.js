@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import ListadoPopUp from "../mobile/ListadoPopUpMobile";
 
 function Studio() {
   return (
@@ -8,7 +9,8 @@ function Studio() {
       <iframe height="100" className="w-full h-20 cortar2" src="https://rpp-peru.vercel.app/proyects.html">
   
 </iframe>
-  <div className="bg-black h-96"></div>
+  <div className="bg-black h-4"></div>
+  <ListadoPopUp/>
       {/* <h1 className="text-left text-bold text-5xl ml-8">PORFILIO</h1>
       <h1>project 1</h1>
       <h1>project 2</h1>

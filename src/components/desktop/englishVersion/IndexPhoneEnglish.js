@@ -1,14 +1,19 @@
-import { useSession } from "next-auth/react";
+import { useSession, signOut } from "next-auth/react";
+import { getSession } from "next-auth/react";
 import Head from "next/head";
-import Header from "./HeaderDesktop";
-import Footer from "./FooterDesktop";
-
-import FooterInfo from "./FooterInfoDesktop";
-import Studio from "../shared/Studio";
-import CenterMode from "./CenterModeDesktop";
+import Header from "./HeaderMobile";
+import ProductFeed from "./ProductFeedMobileEnglish";
+import ProductFeed2 from "./ProductFeed2MobileEnglish";
+import VideoVestidos from "../../shared/VideoVestidos";
+import NoSleep from "./NoSleepMobileEnglish";
+import Footer from "./FooterMobile";
+import Whatsapp from "../../shared/Whatsapp";
+import FooterInfo from "./FooterInfoMobile";
+import Studio from "../../shared/Studio";
+import CenterMode from "./CenterModeMobile";
 import FooterPolicies from "./FooterPolicies";
 import EnglishVersion from "./englishVersion/EnglishVersion";
-
+import Image from "next/image";
 //import { handler } from "./api/tasks";
 import { useEffect, useState } from "react";
 
@@ -17,88 +22,55 @@ import { useEffect, useState } from "react";
 }
 //handler();
 
-export default function IndexDesktop({ products }) {
+export default function IndexPhone({ products }) {
   const { data: session, status } = useSession();
-  const [idioma, setIdioma] = useState(true);
+  const [idioma, setIdioma] = useState(false);
   return (
     <div>
-      {/* <div>
-        <ToggleButton />
-      </div> */}
+      <div>
+        <Head>
+          <title>Benve</title>
+          <link
+            rel="icon"
+            href="https://raw.githubusercontent.com/andresbenve/BancoDeImagenes/master/2e4cc444-ae77-4363-903c-36e28be9cad2.JPG"
+          />
+        </Head>
+        {/* ---- TO BEGIN, delete this section and GET CODING!!! ---- */}
+        <Header />
+        {/* <VideoVestidos /> */}
+        {/* ---- ---- */}
+        {/* <NoSleep /> */}
 
-      <div
-        className=" fixed toggleBoxDesktop z-50 "
-        onClick={() => {
-          setIdioma(!idioma);
-        }}
-      >
-        <div className="toggle h-10">
-          <input type="checkbox" />
-          <label for="" className="onbtn text-sm">
-            ENG
-          </label>
-          <label
-            for=""
-            className="ofbtn text-sm"
-            onClick={() => {
-              setIdioma(true);
-            }}
-          >
-            ESP
-          </label>
-        </div>
-      </div>
+        <main className="max-w-screen-2xl mx-auto">
+          {/* {banner} */}
+          {/* {productFeed} */}
+          <ProductFeed products={products} />
+        </main>
 
-      {idioma ? (
+        <main className="max-w-screen-2xl mx-auto">
+          {/* {banner} */}
+          {/* {productFeed} */}
+          <ProductFeed2 products={products} />
+        </main>
         <div>
-          <EnglishVersion proucts={products} />
+          <CenterMode />
         </div>
-      ) : (
-        <div>
-          <Head>
-            <title>Benve</title>
-            <link
-              rel="icon"
-              href="https://raw.githubusercontent.com/andresbenve/BancoDeImagenes/master/2e4cc444-ae77-4363-903c-36e28be9cad2.JPG"
-            />
-          </Head>
-          {/* ---- TO BEGIN, delete this section and GET CODING!!! ---- */}
-
-          <Header />
-          {/* ---- ---- */}
-          {/* <VideoVestidos /> */}
-          {/* <NoSleep /> */}
-
-          <main className="max-w-screen-2xl mx-auto">
-            {/* {banner} */}
-            {/* {productFeed} */}
-            {/* <ProductFeed products={products} /> */}
-          </main>
-          <main className="max-w-screen-2xl mx-auto">
-            {/* {banner} */}
-            {/* {productFeed} */}
-            {/* <ProductFeed2 products={products} /> */}
-          </main>
-          <div>
-            <CenterMode />
-          </div>
-          {/* <div>
+        {/* <div>
         <Whatsapp />
       </div> */}
-          <div>
-            <Studio />
-          </div>
-          <div>
-            <Footer products={products} />
-          </div>
-          <div>
-            <FooterInfo />
-          </div>
-          <div>
-            <FooterPolicies />
-          </div>
+        <div>
+          <Studio />
         </div>
-      )}
+        <div>
+          <Footer products={products} />
+        </div>
+        <div>
+          <FooterInfo />
+        </div>
+        <div>
+          <FooterPolicies />
+        </div>
+      </div>
     </div>
   );
 }

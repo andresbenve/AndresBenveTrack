@@ -1,22 +1,14 @@
-import { useSession, signOut } from "next-auth/react";
-import { getSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import Head from "next/head";
 import Header from "./HeaderMobile";
-import ProductFeed from "./ProductFeedMobile";
-import ProductFeed2 from "./ProductFeed2Mobile";
 import VideoVestidos from "../shared/VideoVestidos";
-import NoSleep from "./NoSleepMobile";
 import Footer from "./FooterMobile";
-import Whatsapp from "../shared/Whatsapp";
 import FooterInfo from "./FooterInfoMobile";
 import Studio from "../shared/Studio";
 import CenterMode from "./CenterModeMobile";
 import FooterPolicies from "./FooterPolicies";
 import EnglishVersion from "./englishVersion/EnglishVersion";
-import Image from "next/image";
-import ToggleButton from "react-toggle-button";
-//import { handler } from "./api/tasks";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 {
   /* PUSH ARRIESGADO */
